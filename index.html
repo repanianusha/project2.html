@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <style>
+            body{
+                font-size: 20px;
+                font-style: Arial, Helvetica, sans-serif;
+            }
+            .md{
+                display: grid;
+                grid-template-columns:repeat(2,400px);
+            }
+            .apps{
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(2,200px);
+            }
+            .app{
+                background-color: white;
+                padding: 5px;
+            }
+           .main{
+            display: grid;
+            grid-template-columns:60% 40%;
+            background-color: lightblue;
+            border: 3px solid blue;
+           }
+           .tab{
+                margin-left: 40px;
+                text-align: center;
+            }
+            table{
+            padding: 20px;
+           }
+          td{
+            padding: 5px;
+          }
+          input,label{
+                margin-left: 20px;
+                padding: 5px;
+            }
+            input[type='submit']{
+            text-align: center;
+             padding: 5px;
+             font-size: 15px;
+             width: 100px;
+             height: 30px;
+           }
+           #test h2{
+            color: brown;
+           }
+           #test{
+            margin-left: 10px;
+           }
+           .item1 h3{
+            margin-left: 20px;
+         }
+           .item{
+            text-align: center;
+            margin-left: 20px;
+           }
+           .item1{
+            background-color: lightgoldenrodyellow;
+           }
+           @media screen and (min-width:468px){
+            .main{
+                *{
+                    size: fixed;
+                }
+            }
+            .item img{
+                .logo img {
+                    overflow-clip-margin:content-box;
+                    overflow: clip;
+                    width: 50%;
+}
+.item1{
+    font-size: 30px;
+}
+            }
+           }
+           @media screen and (min-width:468px){
+            .item img{
+                .logo img {
+                    overflow: content-box;
+                    width: 200%;
+}
+            }
+           }
+        </style>
+    </head>
+    <body>
+    <nav>
+      <div class="md">
+        <div class="md1">
+          <img src="../../images/logo.png">
+        </div>
+        <div class="md2">
+        <img src="../../images/loginPage.png" width="900px" height="100px" style="text-align: right; margin-left: 400px;">
+        </div>
+      </div>
+    </nav>
+   <div class="main">
+      <div id="item">
+        <p>Adactin Launches The Adactin Hotel App!</p>
+        <img src="../../images/project.png" width="100%" height="400px" style="margin-left: 20px;">
+        <p>The best Free learning platform for Software Testing<br>
+            Now available to download for free on IOS and Android.</p>
+         <div class="apps">
+            <div><a href="https://testflight.apple.com/join/Ai3nVPMD"><img class="app" src="../../images/apple.png"></a></div>
+            <div><a href="https://play.google.com/store/apps/details?id=com.adactin.education.hotelbooking"><img class="app" src="../../images/googleplay.png" ></a></div>
+         </div>
+       </div>
+      <div class="item1">
+        <h3>Existing User Login - Build 1</h3>
+        <div class="tab">
+        <table>
+     <tr><td><label>Username</label><input type="text"></td></tr>
+     <tr><td><label>Password</label><input type="password"></td></tr>
+     <tr><td><a href="https://adactinhotelapp.com/ForgotPassword.php" style="left: 30px;">forgot password</a></td></tr>
+     <tr><td><a href="SearchHotel.html"><input type="submit" value="Login"></input></a></td></tr>
+     <tr><td><a href="RegistrationPage.html" target="_blank">New User Registration Here</a></td></tr>
+    </table></div>
+         <div id="test">
+             <h2>Important Note:</h2>
+             <p>Hotel Application has 2 builds:</p>
+            <ul>
+             <li> Build 1 � Has been developed with known defects. Thus, functional test cases and automation scripts will fail on this build.</li>
+            <li>Build 2 � Known defects have been fixed. Thus, functional test cases and automation test scripts should pass when executed on this build. <a href="">Go to Build 2</a></li>
+        </ul> 
+        </div>
+    </div>
+</div>
+    </body>
+</html>
